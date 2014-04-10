@@ -9,7 +9,7 @@ import time
 from google.appengine.ext import db
 from google.appengine.ext.db import TransactionFailedError
 
-from models.model import *
+from model.model import *
 
 from util.json_serializer import JsonSerializer
 
@@ -26,7 +26,7 @@ class AttendeesController(webapp2.RequestHandler):
             results.append(attendee)
 
         self.response.status = 200
-        self.outputBody = attendess
+        self.outputBody = results
             
         if(self.response.status_int == 200):
             self.response.write(json.dumps(self.outputBody, cls = JsonSerializer))
