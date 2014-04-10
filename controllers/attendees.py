@@ -29,7 +29,7 @@ class AttendeesController(webapp2.RequestHandler):
         self.outputBody = results
             
         if(self.response.status_int == 200):
-            self.response.write(json.dumps(self.outputBody, cls = JsonSerializer))
+            self.response.write(json.dumps(self.outputBody, cls = JsonSerializer, indent=4))
 
 
     def post(self):
@@ -46,4 +46,4 @@ class AttendeesController(webapp2.RequestHandler):
             self.response.status = 201
 
         if(self.response.status_int == 201): 
-            self.response.write(json.dumps(self.outputBody, cls = JsonSerializer))
+            self.response.write(json.dumps(self.outputBody, cls = JsonSerializer, indent=4))
