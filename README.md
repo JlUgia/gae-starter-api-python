@@ -1,4 +1,4 @@
-moscow14-api-python
-===================
+gae-starter-multi-api-python
+============
 
-API built over App Engine and written in Python to collect attendees from Droidcon Moscow 2014
+Basic API built over App Engine and written in Python to collect users

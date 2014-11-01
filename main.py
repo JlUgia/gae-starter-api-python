@@ -13,7 +13,7 @@ from controllers.attendees import *
 # will return 404
 
 ROUTES = [
-    DomainRoute('<:(moscow-2014\.appspot\.com|localhost)>', [ # Allowed domains
+    DomainRoute('<:(gae-starter-multi\.appspot\.com|localhost)>', [ # Allowed domains
 
         # Attendees
         Route(r'/users', handler=AttendeesController, name='attendees')
